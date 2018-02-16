@@ -59,7 +59,8 @@ NAME=0
 FOLDER=1
 PREFIX=2
 HOSTFOLDER=3
-FILENAME=4
+DIRMASK=4
+FILEMASK=5
 
 class Settings():
     def __init__(self):
@@ -70,7 +71,6 @@ class Settings():
         self.force_flag      = True if getaddon_setting('ForceFlag')=='true' else False;
         self.check_size_flag = True if getaddon_setting('CheckSizeFlag') else False;
         self.auto_import     = True if getaddon_setting('AutoImport')=='true' else False;
-        self.dir_mask        = getaddon_setting('DirMask')
         self.temp_dir        = getaddon_setting('TempDir')
         self.response_time   = 20000
         self.backend_lib     = getaddon_setting('BackendLib')
@@ -88,10 +88,11 @@ class Settings():
 
             self.DEVICES[usbid]={
                     NAME:       name,
-                    FOLDER:     getaddon_setting('DeviceFolder'+str(i)),
-                    HOSTFOLDER: getaddon_setting('HostFolder'+str(i)),
-                    FILENAME:   getaddon_setting('FilenameMask'+str(i)),
-                    PREFIX:     getaddon_setting('FilePfefix'+str(i))
+                    FOLDER:     getaddon_setting('DeviceFolder%d'%i),
+                    HOSTFOLDER: getaddon_setting('HostFolder%d'%i),
+                    DIRMASK:    getaddon_setting('DirMask%d'%i),
+                    FILEMASK:   getaddon_setting('FilenameMask%d'%i),
+                    PREFIX:     getaddon_setting('FilePfefix%d'%i)
             }
 ##########################################################################
 class ScanDialog(xbmcgui.DialogProgressBG):
@@ -215,8 +216,8 @@ class MyMonitor(xbmc.Monitor):
 
             name, ext = os.path.splitext(f.name)
             ext=ext[1:]
-            dest_dir=os.path.join(device[HOSTFOLDER], f.last_modified.strftime(s.dir_mask))
-            dest_file=device[FILENAME]
+            dest_dir=os.path.join(device[HOSTFOLDER], f.last_modified.strftime(device[DIRMASK]))
+            dest_file=device[FILEMASK]
             dest_file=re.sub(r'%f',name,dest_file)
             dest_file=re.sub(r'%C',ext,dest_file)
             dest_file=device[PREFIX]+dest_file

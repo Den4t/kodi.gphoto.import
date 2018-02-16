@@ -2,7 +2,6 @@
    <category label="32000">
 	<setting id="ForceFlag" type="bool" label="32001" default="false" />
 	<setting id="CheckSizeFlag" type="bool" label="32002" default="true" />
-	<setting id="DirMask" type="text" label="32003" default="%Y-%m" />
 	<setting id="TempDir" type="folder" label="32004" default="/tmp" />
 	<setting id="AutoImport" type="bool" label="32005" default="false" />
 	<setting id="BackendLib" type="labelenum" label="32006" lvalues="gphoto2-cffi|python-gphoto2" default="gphoto2-cffi" />
@@ -15,6 +14,7 @@
 	<setting id="DeviceFolder0" type="text" label="32302" default="/"/>
 	<setting id="FilePfefix0" type="text" label="32303" default=""/>
 	<setting id="HostFolder0" type="folder" label="32304" default="/storage/Images/gphoto" option="writeable"/>
+	<setting id="DirMask0" type="text" label="32003" default="%Y-%m" />
 	<setting id="FilenameMask0" type="text" label="32305" default="%Y%m%d-%f.%C" />
    </category>
 
@@ -24,6 +24,7 @@
 	<setting id="DeviceFolder1" type="text" label="32302" default="/"/>
 	<setting id="FilePfefix1" type="text" label="32303"/>
 	<setting id="HostFolder1" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="DirMask1" type="text" label="32003" default="%Y-%m" />
 	<setting id="FilenameMask1" type="text" label="32305" default="%Y%m%d-%f.%C" />
    </category>
 
@@ -33,6 +34,7 @@
 	<setting id="DeviceFolder2" type="text" label="32302" default="/"/>
 	<setting id="FilePfefix2" type="text" label="32303"/>
 	<setting id="HostFolder2" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="DirMask2" type="text" label="32003" default="%Y-%m" />
 	<setting id="FilenameMask2" type="text" label="32305" default="%Y%m%d-%f.%C" />
    </category>
 
@@ -42,6 +44,7 @@
 	<setting id="DeviceFolder3" type="text" label="32302" default="/"/>
 	<setting id="FilePfefix3" type="text" label="32303"/>
 	<setting id="HostFolder3" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="DirMask3" type="text" label="32003" default="%Y-%m" />
 	<setting id="FilenameMask3" type="text" label="32305" default="%Y%m%d-%f.%C" />
    </category>
 </settings>
