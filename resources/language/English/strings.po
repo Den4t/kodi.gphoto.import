@@ -1,0 +1,212 @@
+# Kodi Media Center language file
+# Addon Name: Version Check
+# Addon id: service.xbmc.versioncheck
+# Addon Provider: Team Kodi
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-addons/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+##General
+msgctxt "#32000"
+msgid "General"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Force downloag"
+msgstr ""
+
+
+msgctxt "#32002"
+msgid "Check file size"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Directory mask"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Temporary folder"
+msgstr ""
+
+
+msgctxt "#32005"
+msgid "Autoimport"
+msgstr ""
+
+
+msgctxt "#32006"
+msgid "Bakend library"
+msgstr ""
+
+msgctxt "#32007"
+msgid "Skip converted video"
+msgstr ""
+
+
+##Buttons
+msgctxt "#32100"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#32101"
+msgid "Go Backgroung"
+msgstr ""
+
+##Profile tabs
+msgctxt "#32201"
+msgid "Profile 1"
+msgstr ""
+
+msgctxt "#32202"
+msgid "Profile 2"
+msgstr ""
+
+
+msgctxt "#32203"
+msgid "Profile 3"
+msgstr ""
+
+msgctxt "#32204"
+msgid "Profile 4"
+msgstr ""
+
+###Profile internals
+msgctxt "#32300"
+msgid "Profile name"
+msgstr ""
+
+msgctxt "#32301"
+msgid "USB ID"
+msgstr ""
+
+msgctxt "#32302"
+msgid "Device folder"
+msgstr ""
+
+msgctxt "#32303"
+msgid "File prefix"
+msgstr ""
+
+msgctxt "#32304"
+msgid "Host folder"
+msgstr ""
+
+msgctxt "#32305"
+msgid "Filename mask"
+msgstr ""
+
+##Script messages
+msgctxt "#32400"
+msgid "Warning"
+msgstr ""
+
+msgctxt "#32401"
+msgid "Backend library changed, restart kodi !"
+msgstr ""
+
+msgctxt "#32402"
+msgid "Backend error:"
+msgstr ""
+
+msgctxt "#32403"
+msgid "Unexpected error:"
+msgstr ""
+
+msgctxt "#32404"
+msgid "Searching for devices ..."
+msgstr ""
+
+msgctxt "#32405"
+msgid "Gphoto Error"
+msgstr ""
+
+msgctxt "#32406"
+msgid "Camera open error:"
+msgstr ""
+
+msgctxt "#32407"
+msgid "Unknown device"
+msgstr ""
+
+msgctxt "#32408"
+msgid "Error"
+msgstr ""
+
+msgctxt "#32409"
+msgid "Cant create host filder"
+msgstr ""
+
+msgctxt "#32410"
+msgid "Scaning"
+msgstr ""
+
+msgctxt "#32411"
+msgid "Camera info"
+msgstr ""
+
+msgctxt "#32412"
+msgid "Model"
+msgstr ""
+
+msgctxt "#32413"
+msgid "Profile"
+msgstr ""
+
+msgctxt "#32414"
+msgid "No fresh files to import"
+msgstr ""
+
+msgctxt "#32415"
+msgid "Total files to import"
+msgstr ""
+
+msgctxt "#32416"
+msgid "Import"
+msgstr ""
+
+msgctxt "#32417"
+msgid "Cancel"
+msgstr ""
+
+msgctxt "#32418"
+msgid "Transfer error"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Imported size for"
+msgstr ""
+
+msgctxt "#32420"
+msgid "differ from file size"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Import done"
+msgstr ""
+
+msgctxt "#32422"
+msgid "Total files imported"
+msgstr ""
+
+msgctxt "#32423"
+msgid "Images"
+msgstr ""
+
+msgctxt "#32424"
+msgid "Videos"
+msgstr ""
+
+msgctxt "#32425"
+msgid "Dosconnect device"
+msgstr ""
+

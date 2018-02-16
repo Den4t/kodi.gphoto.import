@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<addon 
+		id="script.gphoto" 
+		name="Gphoto import" 
+		provider-name="Dennis Yurasov"
+		version="1.3"
+	>
+	<requires>
+		<import addon="xbmc.python" version="2.24.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Digital camera importer.</summary>
+		<description lang="en">
+			Script for import media from digital cameras, using gphoto library.
+		</description>
+		<language></language>
+		<platform>linux</platform>
+		<platform>osx</platform>
+		<platform>android</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+	</extension>
+</addon>

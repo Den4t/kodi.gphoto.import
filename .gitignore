@@ -1,0 +1,14 @@
+*~
+*.pyc
+*.pyo
+*.bak
+*.orig
+*.patch
+*.o
+*.so
+*.c
+*.py?*
+_test.py
+
+tmp/
+examples/

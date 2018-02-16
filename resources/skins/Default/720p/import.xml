@@ -1,0 +1,185 @@
+<window>
+    <defaultcontrol>300</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <depth>DepthDialog+</depth>
+
+    <controls>
+
+        <control type="group">
+            <posx>290</posx>
+            <posy>50</posy>
+
+            <control type="image">
+                        <description>background image</description>
+                        <left>0</left>
+                        <top>0</top>
+                        <width>700</width>
+                        <height>400</height>
+			<animation effect="fade" time="300">VisibleChange</animation>
+                        <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+                        <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+                        <texture colordiffuse="C2FFFFFF">colors/black.png</texture>
+            </control>
+
+            <control type="image">
+                        <description>Dialog Header image</description>
+                        <left>0</left>
+			<top>0</top>
+                        <width>700</width>
+                        <height>40</height>
+			<texture colordiffuse="button_focus" border="2">colors/white70.png</texture>
+            </control>
+
+	    <control type="label" id="100">
+		<description>Header label</description>
+		<left>10</left>
+		<top>5</top>
+		<width>700</width>
+		<height>30</height>
+		<font>font13_title</font>
+		<label>HEADER</label>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textcolor>white</textcolor>
+		<shadowcolor>black</shadowcolor>
+	    </control>
+
+<!--
+            <control type="label" id="100">
+                <description>Header</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>700</width>
+                <height>40</height>
+                <font>font18</font>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <wrapmultiline>true</wrapmultiline>
+		<label>Header</label>
+            </control>
+-->
+            <control type="image" id="200">
+                <description>Preview image</description>
+                <posx>25</posx>
+                <posy>50</posy>
+                <width>256</width>
+                <height>256</height>
+		<aspectratio>keep</aspectratio>
+                <texture border="5">colors/black.png</texture>
+            </control>
+            <control type="label" id="101">
+                <description>Information</description>
+                <posx>350</posx>
+                <posy>50</posy>
+                <width>300</width>
+                <height>160</height>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <wrapmultiline>true</wrapmultiline>
+		<label>Info</label>
+            </control>
+
+	    <control type="progress" id="102">
+		<description>progress1 control</description>
+		<posx>350</posx>
+		<posy>210</posy>
+		<width>300</width>
+		<height>16</height>
+		<visible>true</visible>
+	    </control>
+
+	    <control type="progress" id="103">
+		<description>progress2 control</description>
+		<posx>350</posx>
+		<posy>250</posy>
+		<width>300</width>
+		<height>16</height>
+		<visible>true</visible>
+	    </control>
+
+            <control type="button" id="300">
+                <description>Cancel</description>
+                <posx>30</posx>
+                <posy>320</posy>
+                <width>200</width>
+                <height>40</height>
+                <font>font18</font>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <onleft>301</onleft>
+                <onright>301</onright>
+		<label>$ADDON[script.gphoto 32100]</label>
+		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+		<texturenofocus colordiffuse="dialog_tint">colors/white.png</texturenofocus>
+            </control>
+
+            <control type="button" id="301">
+                <description>Go background</description>
+                <posx>480</posx>
+                <posy>320</posy>
+                <width>200</width>
+                <height>40</height>
+                <font>font18</font>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <onleft>300</onleft>
+                <onright>300</onright>
+		<label>$ADDON[script.gphoto 32101]</label>
+		<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
+		<texturenofocus colordiffuse="dialog_tint">colors/white.png</texturenofocus>
+            </control>  
+<!--
+<control type="progress" id="2004">
+	<description>progress1 control</description>
+	<posx>15</posx>
+	<posy>38</posy>
+	<width>370</width>
+	<height>8</height>
+	<visible>true</visible>
+</control>
+
+
+
+            <control type="button" id="102">
+                <description>Zoom In</description>
+                <posx>252</posx>
+                <posy>520</posy>
+                <width>200</width>
+                <height>40</height>
+                <font>font18</font>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <onleft>101</onleft>
+                <onright>103</onright>
+            </control>
+            <control type="button" id="103">
+                <description>Zoom Out</description>
+                <posx>480</posx>
+                <posy>520</posy>
+                <width>200</width>
+                <height>40</height>
+                <font>font18</font>
+                <textcolor>white</textcolor>
+                <aligny>center</aligny>
+                <align>center</align>
+                <onleft>102</onleft>
+                <onright>101</onright>
+            </control>  
+-->
+
+        </control>
+    </controls>
+</window>
+
+
+
+

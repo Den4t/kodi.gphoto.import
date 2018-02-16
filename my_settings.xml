@@ -1,0 +1,30 @@
+<settings>
+    <setting id="CheckSizeFlag" value="true" />
+    <setting id="DeviceFolder0" value="/" />
+    <setting id="DeviceFolder1" value="/store_00020002/DCIM/Camera" />
+    <setting id="DeviceFolder2" value="/" />
+    <setting id="DeviceFolder3" value="/" />
+    <setting id="DirMask" value="%Y-%m" />
+    <setting id="FilePfefix0" value="" />
+    <setting id="FilePfefix1" value="G-" />
+    <setting id="FilePfefix2" value="IXUS-" />
+    <setting id="FilePfefix3" value="EOS-" />
+    <setting id="FilenameMask0" value="%Y%m%d-%f.%C" />
+    <setting id="FilenameMask1" value="%Y%m%d-%f.%C" />
+    <setting id="FilenameMask2" value="%Y%m%d-%f.%C" />
+    <setting id="FilenameMask3" value="%Y%m%d-%f.%C" />
+    <setting id="ForceFlag" value="false" />
+    <setting id="HostFolder0" value="/storage/Images/gphoto" />
+    <setting id="HostFolder1" value="/storage/Images/gphoto" />
+    <setting id="HostFolder2" value="/storage/Images/gphoto" />
+    <setting id="HostFolder3" value="/storage/Images/gphoto" />
+    <setting id="PofieName0" value="Default" />
+    <setting id="PofieName1" value="MyGalaxy" />
+    <setting id="PofieName2" value="IXUS" />
+    <setting id="PofieName3" value="EOS" />
+    <setting id="TempDir" value="/tmp" />
+    <setting id="USBID0" value="*:*" />
+    <setting id="USBID1" value="04e8:6860" />
+    <setting id="USBID2" value="04a9:31c2" />
+    <setting id="USBID3" value="04a9:3218" />
+</settings>

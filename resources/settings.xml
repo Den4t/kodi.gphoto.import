@@ -1,0 +1,47 @@
+<settings>
+   <category label="32000">
+	<setting id="ForceFlag" type="bool" label="32001" default="false" />
+	<setting id="CheckSizeFlag" type="bool" label="32002" default="true" />
+	<setting id="DirMask" type="text" label="32003" default="%Y-%m" />
+	<setting id="TempDir" type="folder" label="32004" default="/tmp" />
+	<setting id="AutoImport" type="bool" label="32005" default="false" />
+	<setting id="BackendLib" type="labelenum" label="32006" lvalues="gphoto2-cffi|python-gphoto2" default="gphoto2-cffi" />
+	<setting id="SkipConvVideo" type="bool" label="32007" default="true" />
+   </category>
+
+   <category label="32201">
+	<setting id="PofieName0" type="text" label="32300" default="Default" />
+	<setting id="USBID0" type="text" label="32301" default="*:*" />
+	<setting id="DeviceFolder0" type="text" label="32302" default="/"/>
+	<setting id="FilePfefix0" type="text" label="32303" default=""/>
+	<setting id="HostFolder0" type="folder" label="32304" default="/storage/Images/gphoto" option="writeable"/>
+	<setting id="FilenameMask0" type="text" label="32305" default="%Y%m%d-%f.%C" />
+   </category>
+
+   <category label="32202">
+	<setting id="PofieName1" type="text" label="32300"/>
+	<setting id="USBID1" type="text" label="32301"/>
+	<setting id="DeviceFolder1" type="text" label="32302" default="/"/>
+	<setting id="FilePfefix1" type="text" label="32303"/>
+	<setting id="HostFolder1" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="FilenameMask1" type="text" label="32305" default="%Y%m%d-%f.%C" />
+   </category>
+
+   <category label="32203">
+	<setting id="PofieName2" type="text" label="32300"/>
+	<setting id="USBID2" type="text" label="32301"/>
+	<setting id="DeviceFolder2" type="text" label="32302" default="/"/>
+	<setting id="FilePfefix2" type="text" label="32303"/>
+	<setting id="HostFolder2" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="FilenameMask2" type="text" label="32305" default="%Y%m%d-%f.%C" />
+   </category>
+
+   <category label="32204">
+	<setting id="PofieName3" type="text" label="32300"/>
+	<setting id="USBID3" type="text" label="32301"/>
+	<setting id="DeviceFolder3" type="text" label="32302" default="/"/>
+	<setting id="FilePfefix3" type="text" label="32303"/>
+	<setting id="HostFolder3" type="folder" label="32304" option="writeable" default="/storage/Images/gphoto" />
+	<setting id="FilenameMask3" type="text" label="32305" default="%Y%m%d-%f.%C" />
+   </category>
+</settings>
