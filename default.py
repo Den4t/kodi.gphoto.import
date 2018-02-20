@@ -106,6 +106,7 @@ class MyMonitor(xbmc.Monitor):
     def __init__(self, *args, **kwargs):
         xbmc.Monitor.__init__(self, *args, **kwargs)
         self.runned=False
+        self.settings_changed=False
 
     def onNotification(self, sender, method, data):
         global ADDON_ID
@@ -121,8 +122,11 @@ class MyMonitor(xbmc.Monitor):
         if s.backend_lib != getaddon_setting('BackendLib'):
             #xbmcgui.Dialog().ok('Warning', 'Backend library changed, restart kodi !')
             xbmcgui.Dialog().ok(ls(32400), ls(32401))
-        #reread settings
-        s.Read()
+        if self.runned:
+            self.settings_changed=True
+        else:
+            #reread settings
+            s.Read()
 
     def Run(self):
         if self.runned:
@@ -132,17 +136,20 @@ class MyMonitor(xbmc.Monitor):
             try:
                 ret=self.Main()
             except gp.BackendError as ex:
-                ret=False
                 log('>>>> %s'%traceback.format_exc(10))
                 #xbmcgui.Dialog().ok('Backend error:', ex.message)
                 xbmcgui.Dialog().ok(ls(32402), ex.message)
             except Exception as ex:
-                ret=False
                 log('>>>> %s'%traceback.format_exc(10))
                 #xbmcgui.Dialog().ok('Unexpected error:', ex.message)
                 xbmcgui.Dialog().ok(ls(32403), ex.message)
             log('>>>> Main finished, status=%s'%ret)
             self.runned=False
+
+            if self.settings_changed:
+                log('>>>> Settings was changed !')
+                self.settings_changed=False
+                s.Read()
 
     def Loop(self):
         self.Run()
